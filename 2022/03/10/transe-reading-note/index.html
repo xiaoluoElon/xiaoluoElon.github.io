@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 小洛Elon">
+    <meta name="keywords" content="trans系列论文（一）：transE, 小洛Elon">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 小洛Elon</title>
+    <title>trans系列论文（一）：transE | 小洛Elon</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">trans系列论文（一）：transE</h1>
                 </div>
             </div>
         </div>
@@ -409,12 +409,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%AE%BA%E6%96%87/">
+                                <span class="chip bg-color">知识图谱论文</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87/" class="post-category">
+                                知识图谱相关论文
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -423,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-08
+                    2022-03-10
                 </div>
                 
 
@@ -432,14 +445,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -459,19 +472,87 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="文献基本信息"><a href="#文献基本信息" class="headerlink" title="文献基本信息"></a>文献基本信息</h2><p><strong>标题：</strong>Translating Embeddings for Modeling Multi-relational Data</p>
+<p><strong>时间：</strong>2013</p>
+<p><strong>会议：</strong>NIPS</p>
+<p><strong>论文地址：</strong><a target="_blank" rel="noopener" href="https://proceedings.neurips.cc/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html">链接</a></p>
+<p><strong>开源地址：</strong><a target="_blank" rel="noopener" href="http://goo.gl/0PpKQe">开源</a>（<a target="_blank" rel="noopener" href="https://github.com/zqhead/TransE">第三方复现</a>）</p>
+<p><strong>解决的问题：</strong></p>
+<blockquote>
+<p>1、Our objective is to propose acanonical（非线性） model which is easy to train, contains a reduced number of parameters and can scale up to very large databases</p>
+<p>提出了一种非线性模型，更易训练、参数更少和拓展性强</p>
+<p>2、Our work focuses on modeling multi-relational data from KBs (Wordnet and Freebase in this paper), with the goal of providing an efficient tool to complete modeling multi-relational data from KBs by automatically adding new facts, without requiring extra knowledge</p>
+<p>提出一种在多关系数据中对新知识提取关系的建模能力更强的模型</p>
+</blockquote>
+<p><strong>方法：</strong></p>
+<blockquote>
+<p>提出了一种基于平移距离的方法，用简单的“一维”向量在平面空间表示了实体与关系之间的距离</p>
+</blockquote>
+<p><strong>创新点：</strong></p>
+<blockquote>
+<p>1、在神经网络能量模型流行时下，提出了低维向量嵌入的transE方法，并且毫不逊色的解决了关系嵌入的问题。</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    transE是谷歌公司的杰作，是知识图谱补全工作中基于距离方法的开山之作，对后续的知识图谱关系嵌入研究影响巨大。在我做完嵌入的调研工作以后，我的研究方向从研一上学期的针对NLP感情分析任务的攻击调整为针对知识图谱嵌入工作的攻击（数据投毒方法），transE是我阅读这个领域的第一篇文章，恰逢博客网站建立起来，我会在未来的学业职业生涯中将自己遇到的技术和知识记录在博客里面。目前打算主要分享关于<strong>数据分析</strong>和<strong>论文</strong>两个方面的文章。</p>
+<h2 id="文章内容"><a href="#文章内容" class="headerlink" title="文章内容"></a>文章内容</h2><p>​    作者分析前人的工作后指出，在多关系数据集中一个简单的线性模型的表现结果可能与当下最优秀的最具表达力的模型表现结果相当，即使在复杂且异构的多关系域中，简单但适当的建模假设也可以在准确性和可伸缩性之间进行更好的权衡。这就为论文提出的transE这个线性模型做了铺垫。</p>
+<blockquote>
+<p>As a matter of fact, it was shown in [2] that a simpler model (linear instead of bilinear) achieves almost as good performance as the most expressive models on several multi-relational data sets with a relatively large number of different relationships.  This suggests that even in complex and heterogeneous multi-relational domains simple yet appropriate modeling assumptions can lead to better trade-offs between accuracy and scalability</p>
+</blockquote>
+<h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><p>​    简单来说，TransE就是将知识图谱中的实体和关系看成两个Matrix。实体矩阵结构为n x d，其中n表示实体数量，d表示每个实体向量的维度，矩阵中的每一行代表了一个实体的词向量；而关系矩阵结构为 r x d ，其中r代表关系数量，d表示每个关系向量的维度。TransE训练后模型的理想状态是，从实体矩阵和关系矩阵中各自抽取一个向量，进行L1或者L2运算，得到的结果近似于实体矩阵中的另一个实体的向量，从而达到通过词向量表示知识图谱中已存在的三元组 (h,l,t) 的关系</p>
+<blockquote>
+<p>InTransE, relationships are represented as translations in the embedding space: if(h,l,t)holds, then the embedding of the tail entityt should be close to the embedding of the head entityh plus some vector that depends on the relationship l.</p>
+</blockquote>
+<img src="https://pic2.zhimg.com/v2-3595a2c7481c0623f93280f933fa1035_b.jpg" alt="模型图示" title="模型图示" style="zoom:50%;">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>​    </p>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p>transE的算法过程如下</p>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h040p51rmyj20zc0iw41b.jpg" alt="算法过程"></p>
+<p>算法的大致思路：</p>
+<ul>
+<li><p>初始化所有的实体和关系向量</p>
+</li>
+<li><p>循环</p>
+<ul>
+<li>初始化每一个实体（防止过拟合）</li>
+<li>从训练集选取小批量训练</li>
+<li>对每一个三元组制作损坏三元组</li>
+<li>测试直到损失函数收敛</li>
+</ul>
+</li>
+<li><p>结束循环</p>
+</li>
+</ul>
+<h3 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h3><p><strong>损失函数：</strong></p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h043f79bk1j20lq02uwei.jpg" alt="" style="zoom:50%;">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>​    其中r表示两个三元组的margin（大致表示他们的相似程度） margin r 的作用相当于是一个正确triple与错误triple之前的间隔修正，margin越大，则两个triple之前被修正的间隔就越大，则对于词向量的修正就越严格。d()是距离公式。t’表示修改过的实体向量，r用作最终结果的排序（在链路预测任务中对实体的排序，用来计算MR和hit@10%)。[x]+表示对x内容取正值，当x小于0则[x]+=0。</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h043mhg6iej20i201e3yg.jpg" alt="" style="zoom:50%;">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>​    E是实体集合，S’是修改了尾实体的三元组和修改了头实体的三元组的并集（两者不同时修改）。</p>
+<p><strong>训练过程：</strong></p>
+<p>​    模型的参数的总量为</p>
+<p> <img src="https://www.zhihu.com/equation?tex=O(n_%7Be%7Dk+++n_%7Br%7Dk)"> </p>
+<p>也就是说Loss更新的参数，是所有entities和relations的Embedding数据，每一次随机梯度下降更新的参数就是一个Batch中所有embedding的值，Loss function 希望达到的理想情况是，正确的triple的d(h + r , t) 尽可能的小，而错误triple的 d(h’+l，t’)尽可能大，这样才能让总体的loss趋向于0。</p>
+<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><p>作者对比了Unstructured、RESCAL、SE、SME、LFM、等方法并指出了自己的见解：</p>
+<p>1、 transE在表示双向交互的关系中存在缺陷（非自反关系）</p>
+<p>2、对严重存在三向依赖的关系型数据的表示可能失败，例如小型的亲属关系数据集</p>
+<p>3、transE对大规模高频联系关系的嵌入表现非常出色</p>
+<p><em>transE方法在一对多、多对一、多对多关系上的表现不尽如人意，但是这些缺陷在后续的transH中得到解决</em></p>
+<p>实验数据集：</p>
+<p>WordNet：一个直观好用的字典和词表，词义是实体，词汇关系是关系</p>
+<p>FB1M:作者自己处理的数据集，结合了Freebase、Wikilinks、FB15等数据集，主要处理为去除了简单的反关系（例如freebase中的（h,l,t）的反关系为！（h,l,t）），另外作者从Freebase中选取了发生最频繁的一百万个实体。</p>
+<blockquote>
+<p>在链路预测实验中，假设一共有n个实体，当修改t实体的时候，就有n-1种被修改的损坏三元组(h，l，t’)，在损失收敛的情况下，将正确的三元组的分数减去错误的三元组的分数得到的结果做一个升序排序，假设h的尾实体有4个，在前十个预测尾实体的结果中如果有3个命中，则Hits@10的分数为3/8，假设分别是第三个、第八个、第十五个和第三十个命中，则MR的值为（3+8+15+30）/4，MRR的值为(1/3+1/8+1/15+1/30)/4。</p>
+</blockquote>
+<p><img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h044ycxe5rj21420ak0vk.jpg"></p>
+<p>​    实验结果表明transE方法取得了state-of-the-art的效果。图中Raw是没有去掉损坏三元组对应正确三元组的数据，而Filt是去掉的数据集，包括训练、验证、测试。</p>
+<p>​    作者还做了实验验证transE通过少量例子学习新关系的能力：</p>
+<img src="https://tva1.sinaimg.cn/large/e6c9d24egy1h045n4y2e3j211o0e8wh0.jpg" alt="" style="zoom:80%;">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>​    实验结果表明，在给予10个训练样本的情况下，transE的效果都非常好，在MR指标中仅次于SME线性，在Hits@10中第一名，学习效果好。</p>
+<p><strong>参考链接</strong></p>
+<p>1、<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_16949707/article/details/103124322">https://blog.csdn.net/qq_16949707/article/details/103124322</a></p>
+<p>2、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/MRR/10337846?fr=aladdin">https://baike.baidu.com/item/MRR/10337846?fr=aladdin</a></p>
+<p>3、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/152257102">https://zhuanlan.zhihu.com/p/152257102</a></p>
 
                 
             </div>
@@ -488,7 +569,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Zhu Dong</a>
+                    <a href="/about" rel="external nofollow noreferrer">小洛Elon</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -498,7 +579,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiaoluoElon.github.io/2022/03/08/hello-world/">http://xiaoluoElon.github.io/2022/03/08/hello-world/</a>
+                    <a href="http://xiaoluoElon.github.io/2022/03/10/transe-reading-note/">http://xiaoluoElon.github.io/2022/03/10/transe-reading-note/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -511,7 +592,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Zhu Dong</a>
+                    <a href="/about" target="_blank">小洛Elon</a>
                     !
                 </span>
             </div>
@@ -535,7 +616,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%AE%BA%E6%96%87/">
+                                    <span class="chip bg-color">知识图谱论文</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -754,34 +839,46 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/03/08/hello-world/">
+                <a href="/2022/03/10/transe-reading-note/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="trans系列论文（一）：transE">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">trans系列论文（一）：transE</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            tranE论文阅读笔记+博客网站第一篇文章。transE是知识图谱补全链路预测任务中基于平移距离模型的开山之作。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Zhu Dong
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87/" class="post-category">
+                                    知识图谱相关论文
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%AE%BA%E6%96%87/">
+                        <span class="chip bg-color">知识图谱论文</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -792,34 +889,46 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/08/hello-world/">
+                <a href="/2022/03/10/transe-reading-note/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="trans系列论文（一）：transE">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">trans系列论文（一）：transE</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            tranE论文阅读笔记+博客网站第一篇文章。transE是知识图谱补全链路预测任务中基于平移距离模型的开山之作。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Zhu Dong
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87/" class="post-category">
+                                    知识图谱相关论文
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E8%AE%BA%E6%96%87/">
+                        <span class="chip bg-color">知识图谱论文</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1002,7 +1111,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">1.8k</span>&nbsp;字
             
             
             
