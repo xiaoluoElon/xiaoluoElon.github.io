@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>双线性模型RESCAl</title>
+      <link href="/2022/03/13/rescal-reading-note/"/>
+      <url>/2022/03/13/rescal-reading-note/</url>
+      
+        <content type="html"><![CDATA[<h2 id="文献基本信息"><a href="#文献基本信息" class="headerlink" title="文献基本信息"></a>文献基本信息</h2><p><strong>标题：</strong>A Three-Way Model for Collective Learning on Multi-Relational Data</p><p><strong>时间：</strong>2011</p><p><strong>会议：</strong>ICML</p><p><strong>解决的问题：</strong></p><blockquote><p>基本问题：多关系数据的嵌入问题</p></blockquote><p><strong>方法：</strong></p><blockquote><p>使用三维张量因子化的方法分析实体之间潜在的组成关系</p></blockquote><p><strong>创新点：</strong></p><blockquote><p>是基于双线性模型的基于语义匹配关系的开山之作</p></blockquote><h2 id="文章内容"><a href="#文章内容" class="headerlink" title="文章内容"></a>文章内容</h2><p>​    由于这是一篇很老的文章了，主要想通过这篇文章学习双线性模型的思想。</p><p>作者在introduction中谈到使用张量建模的理由是因为任意阶的多重关系都可以直接表示为高阶张量，这就给使用张量建模关系提供了简单性</p><blockquote><p>From a modelling per-spective tensors provide simplicity, as multiple relations ofany order can be expressed straight forwardly as a higher-order tensor.</p></blockquote><h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><p>三维张量的两个边代表实体，分别是头实体和尾实体，R轴代表关系，矩阵一个某个关系的切面矩阵中的值分别为0或者1，1表示两边实体有关系，0则表示咩有关系，很好理解。</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088fiaemxj20gs092t8z.jpg" alt="张量模型"></p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088eoy805j20f007q3yu.jpg" alt="RESCAL图示">    </p><blockquote><p>在做分解的时候分解后的 <strong>A</strong> 是每个实体的潜在语义表示，每行代表一个实体，<strong>r</strong> 是<strong>指定关系</strong>的<a href="https://so.csdn.net/so/search?q=%E7%BB%B4%E5%BA%A6&amp;spm=1001.2101.3001.7020">维度</a>，也即语义表示。<strong>矩阵 Rk（r × r）</strong> 建模 <strong>指定关系中</strong> 的实体间的语义的交互。如此，三维张量就能一片片（每个关系都照顾到）进行分解。</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088kkxs94j20b202et8j.jpg" alt="分解公式"></p></blockquote><p><img src="https://img-blog.csdnimg.cn/9d1ce1014b5b43e2bc05994a2b63fd4d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU3RhcnByb2dfVUVTVENfQXg=,size_9,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="实体组成成分的理解"></p><p>​    </p><p>这样的分解机制可以利用相关实体提供的信息进行表示，类似推荐里的协同过滤，这里称为 collective learning，举了一个栗子：</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088mldg4tj20r30geabh.jpg" alt="img"></p><p>这就是 Rescal 的核心思想了</p><h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><h3 id="collective-classification"><a href="#collective-classification" class="headerlink" title="collective classification"></a>collective classification</h3><p>该实验使用自建的政党数据集，包括 93 个实体和 3 个关系，因此构建了 93×93×5 的 tensor。政党分类效果如下。左图弧的宽度表示两个总统是否在同一个政党。</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088mka4zqj21020f2778.jpg" alt="img"></p><h3 id="collective-实体消歧"><a href="#collective-实体消歧" class="headerlink" title="collective 实体消歧"></a>collective 实体消歧</h3><p>实体消歧可以视为 isEqual 关系的链接预测，在 Cora 数据集上进行了实验：</p><p><img src="https://tva1.sinaimg.cn/large/e6c9d24ely1h088mku6iuj210c0dn0ut.jpg" alt="img"></p><p>除了上述两个实验，还在 Kinships, Nations 和 UMLS 数据集上进行了链接预测，并在 Nations 数据集上进行了聚类实验。并在各个数据集上进行了与其他两个算法的运行效率的比较</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识图谱相关论文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识图谱论文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>trans系列论文（一）：transE</title>
       <link href="/2022/03/10/transe-reading-note/"/>
       <url>/2022/03/10/transe-reading-note/</url>
